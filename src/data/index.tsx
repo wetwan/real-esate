@@ -28,3 +28,20 @@ export const navItem = [
     label: "contact",
   },
 ];
+
+export const fadeImages = [
+  {
+    url: assests.image,
+    caption: "First Slide",
+  },
+
+  {
+    url: assests.image3,
+    caption: "second Slide",
+  },
+
+  {
+    url: assests.image6,
+    caption: "First Slide",
+  },
+];

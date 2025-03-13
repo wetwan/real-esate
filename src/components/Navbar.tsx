@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const childVariant = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1 },
@@ -13,10 +13,10 @@ const Navbar = () => {
   };
   const navigate = useNavigate();
   return (
-    <header className="w-full bg-gray-100 max-lg:bg-blue-800">
-      <nav className="lg:w-4/6 w-full items-center justify-between lg:mx-auto py-3 max-lg:px-2  flex">
+    <header className="w-full bg-black/20 max-lg:bg-blue-800">
+      <nav className="lg:w-5/6 w-full items-center justify-between lg:mx-auto  max-lg:px-2  flex">
         <div
-          className="text-white font-bold  max-lg:px-2 cursor-pointer h-full"
+          className="text-white font-bold cursor-pointer h-full"
           onClick={() => navigate("/")}
         >
           <h1 className="capitalize font-extrabold text-3xl "> oakberry</h1>
@@ -26,8 +26,8 @@ const Navbar = () => {
           {navItem.map((nav, i) => (
             <NavLink
               className={({ isActive }) =>
-                `lg:px-4 py-3 px-2 cursor-pointer transition-colors ease-in duration-300 ${
-                  isActive ? "text-blue-600  font-semibold " : " "
+                `lg:px-4 py-2 px-2 cursor-pointer font-bold transition-colors ease-in duration-300 ${
+                  isActive ? "text-blue-600   " : " "
                 }`
               }
               to={nav.link}
@@ -37,7 +37,7 @@ const Navbar = () => {
             </NavLink>
           ))}
         </ul>
-        <div className="px-4 " onClick={() => setIsOpen(!isOpen)}>
+        <div className="px-4 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen === true ? (
             <p className="text-xl font-bold  rounded-full w-10 h-10 text-center  border-4 text-red-600">
               x
