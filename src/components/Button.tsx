@@ -8,7 +8,7 @@ type Props = {
   className?: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
-  arrow?: IconType; // Make arrow optional
+  arrow?: IconType;
 };
 
 const Button: React.FC<Props> = ({

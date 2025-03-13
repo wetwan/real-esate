@@ -12,14 +12,14 @@ const Hero = () => {
           className=" bg-center bg-no-repeat bg-cover w-full h-dvh py-60"
           style={{ backgroundImage: `url(${assests.image})` }}
         >
-          <div className="w-3/6 mx-auto p-5 text-white ">
-            <h1 className="w-5/6 mx-auto text-5xl leading-15 font-semibold text-center">
+          <div className="lg:w-2/6 mx-auto p-5 text-white ">
+            <h1 className="w-5/6 mx-auto md:text-5xl text-3xl lg:leading-15 leading-10 font-semibold text-center">
               {" "}
               Let Your Home Be Unique & Stylist
             </h1>
             <p
               className="text-center mt-10
-             font-semibold leading-7"
+             font-semibold lg:leading-7 px-5"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               doloribus quidem minus tempore delectus doloremque, quo in cumque
@@ -28,7 +28,7 @@ const Hero = () => {
             <Button
               arrow={BiChevronRight}
               text="learn more"
-              className="block px-20 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
+              className="block px-14 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
             />
           </div>
         </div>
@@ -36,13 +36,13 @@ const Hero = () => {
           className=" bg-center bg-no-repeat bg-cover w-full h-dvh py-60"
           style={{ backgroundImage: `url(${assests.image2})` }}
         >
-          <div className="w-3/6 mx-auto p-5 text-white ">
-            <h1 className="w-5/6 mx-auto text-5xl leading-15 font-semibold text-center">
+          <div className="lg:w-2/6 mx-auto p-5 text-white ">
+            <h1 className="w-5/6 mx-auto md:text-5xl text-3xl lg:leading-15 leading-10 font-semibold text-center">
               Modern House Make Better Life
             </h1>
             <p
               className="text-center mt-10
-             font-semibold leading-7"
+             font-semibold lg:leading-7 px-5"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               doloribus quidem minus tempore delectus doloremque, quo in cumque
@@ -51,7 +51,7 @@ const Hero = () => {
             <Button
               arrow={BiChevronRight}
               text="learn more"
-              className="block px-20 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
+              className="block px-14 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
             />
           </div>
         </div>
@@ -59,13 +59,13 @@ const Hero = () => {
           className=" bg-center bg-no-repeat bg-cover w-full h-dvh py-60"
           style={{ backgroundImage: `url(${assests.image3})` }}
         >
-          <div className="w-3/6 mx-auto p-5 text-white ">
-            <h1 className="w-5/6 mx-auto  text-5xl leading-15 font-semibold text-center">
+          <div className="lg:w-2/6 mx-auto p-5 text-white ">
+            <h1 className="w-5/6 mx-auto  md:text-5xl text-3xl lg:leading-15 leading-10 font-semibold text-center">
               Your Property Is Our Priority
             </h1>
             <p
               className="text-center mt-10
-             font-semibold leading-7"
+             font-semibold lg:leading-7 px-5"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               doloribus quidem minus tempore delectus doloremque, quo in cumque
@@ -74,7 +74,7 @@ const Hero = () => {
             <Button
               arrow={BiChevronRight}
               text="learn more"
-              className="block px-20 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
+              className="block px-14 py-5 bg-green-500 rounded-md uppercase font-bold mx-auto my-10"
             />
           </div>
         </div>

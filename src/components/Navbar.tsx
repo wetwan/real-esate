@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   const navigate = useNavigate();
   return (
-    <header className="w-full bg-black/20 max-lg:bg-blue-800">
+    <header className="w-full bg-black/20 max-lg:bg-blue-800 max-lg:fixed -top-0">
       <nav className="lg:w-5/6 w-full items-center justify-between lg:mx-auto  max-lg:px-2  flex">
         <div
           className="text-white font-bold cursor-pointer h-full"
@@ -53,7 +53,7 @@ const Navbar = () => {
             initial={{ y: -100, opacity: 0.2 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed top-20 z-50  bottom-[300px]  w-full   left-0 right-0  transition-all duration-500 ease-linear  bg-blue-700"
+            className="fixed top-14 z-50  bottom-[300px]  w-full   left-0 right-0  transition-all duration-500 ease-linear  bg-blue-700"
             onClick={() => setIsOpen(!isOpen)}
           >
             <ul className="flex flex-col items-start py-5 px-10 uppercase text-white gap-5">
