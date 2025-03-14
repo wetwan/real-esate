@@ -6,7 +6,7 @@ const Search = () => {
   const [properties, setProperties] = useState("buy");
 
   return (
-    <div className=" lg:w-4/6 -z-50  px-2 mx-auto -mb-20 absolute lg:-bottom-36 -bottom-72 lg:p-6 left-1/2 -translate-x-1/2">
+    <div className=" lg:w-4/6 -z-50  px-2 mx-auto sm:mb-20 -mb-20 absolute lg:-bottom-36 -bottom-72 lg:p-6 left-1/2 -translate-x-1/2">
       <div className="lg:w-2/6   mx-auto flex items-center justify-between md:gap-4 gap-2  mb-0 text-white">
         <button
           className={` ${
@@ -29,27 +29,27 @@ const Search = () => {
           sell properties
         </button>
       </div>
-      <form className=" mt-0 md:grid grid-cols-5 items-center justify-between ">
-        <div className="bg-white w-full h-full text-black flex flex-col md:py-4 py-2">
+      <form className="  md:grid grid-cols-5 items-center justify-between ">
+        <div className="bg-white w-full h-full text-black flex flex-col py-3 max-lg:py-2 ">
           <label
-            className="font-bold text-black text-xl uppercase px-1"
+            className="font-bold text-black  uppercase px-1"
             htmlFor="name"
           >
             Enter keyword
           </label>
           <div className="px-1 mt-2 text-black flex  w-5/6 items-center justify-between">
-            <BiSearch className="text-xl text-gray-300" />
+            <BiSearch className=" text-gray-300" />
             <input
               type="text"
               id="name"
-              className="w-5/6 capitalize border-none  outline-none placeholder-shown:text-gray-400"
+              className="w-5/6 capitalize border-none  outline-none placeholder-shown:text-gray-400 "
               placeholder="Enter keyword"
             />
           </div>
         </div>
-        <div className="bg-white w-full h-full text-black flex flex-col md:py-4 py-2 lg:border-l">
+        <div className="bg-white w-full h-full text-black flex flex-col  py-3 max-lg:py-2 lg:border-l">
           <label
-            className="font-bold text-black text-xl uppercase px-1"
+            className="font-bold text-black  uppercase px-1"
             htmlFor="type"
           >
             property type
@@ -65,26 +65,26 @@ const Search = () => {
             <option value="industrial">industrial</option>
           </select>
         </div>
-          <div className="bg-white text-black flex flex-col w-full h-full md:py-4 py-3 lg:border-l">
+        <div className="bg-white text-black flex flex-col w-full h-full  py-3 max-lg:py-3 lg:border-l">
           <label
-            className="font-bold text-black text-xl uppercase px-1"
+            className="font-bold text-black  uppercase px-1"
             htmlFor="location"
           >
             location
           </label>
           <div className="px-1 mt-2 text-black flex  w-5/6 items-center justify-between">
-            <CiLocationArrow1 className="text-xl text-gray-300" />
+            <CiLocationArrow1 className=" text-gray-300" />
             <input
               type="text"
               id="location"
-              className="w-5/6 capitalize border-none  outline-none placeholder-shown:text-gray-400"
+              className="w-5/6 capitalize border-none  outline-none placeholder-shown:text-gray-400 "
               placeholder="location"
             />
           </div>
         </div>
-        <div className="bg-white text-black flex flex-col w-full h-full md:py-4 py-3 lg:border-l">
+        <div className="bg-white text-black flex flex-col w-full h-full  py-3 max-lg:py-3 lg:border-l">
           <label
-            className="font-bold text-black text-xl uppercase px-1"
+            className="font-bold text-black  uppercase px-1"
             htmlFor="limit"
           >
             property limit
@@ -112,7 +112,7 @@ const Search = () => {
             <option value="15000">15000</option>
           </select>
         </div>
-        <div className="bg-green-500 text-white flex flex-col w-full h-full text-center py-5 lg:leading-22 font-bold uppercase ">
+        <div className="bg-green-500   text-white flex items-center justify-center w-full h-full text-center  max-md:py-5  font-bold uppercase ">
           search
         </div>
       </form>
