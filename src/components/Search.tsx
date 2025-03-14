@@ -6,8 +6,8 @@ const Search = () => {
   const [properties, setProperties] = useState("buy");
 
   return (
-    <div className=" lg:w-4/6 -z-50  px-2 mx-auto sm:mb-20 -mb-20 absolute lg:-bottom-36 -bottom-72 lg:p-6 left-1/2 -translate-x-1/2">
-      <div className="lg:w-2/6   mx-auto flex items-center justify-between md:gap-4 gap-2  mb-0 text-white">
+    <div className=" lg:w-4/6 sm:w-5/6 flex flex-col items-center justify-center -z-50 px-2 mx-auto  sm:mb-20 pb-10 -mb-20 absolute lg:-bottom-36 -bottom-72 sm:-bottom-40 lg:p-6 left-1/2 -translate-x-1/2">
+      <div className="sm:w-3/6   mx-auto flex items-center justify-between md:gap-4 gap-2  mb-0 text-white">
         <button
           className={` ${
             properties === "buy"
@@ -29,7 +29,7 @@ const Search = () => {
           sell properties
         </button>
       </div>
-      <form className="  md:grid grid-cols-5 items-center justify-between ">
+      <form className="  md:grid grid-cols-5 items-center justify-between shadow-md">
         <div className="bg-white w-full h-full text-black flex flex-col py-3 max-lg:py-2 ">
           <label
             className="font-bold text-black  uppercase px-1"
