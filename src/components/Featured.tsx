@@ -6,7 +6,7 @@ import HouseCard from "./HouseCard";
 const Featured = () => {
   const { house, isLoading } = useContext(PropertyContext);
   return (
-    <div className="w-full sm:-bottom-2/6 -mb-[1200px] -bottom-6/6 absolute text-center -z-50">
+    <div className="w-full sm:-bottom-2/6 sm:-mb-[1200px] py-10  -mb-[3100px] bg-blue-800 sm:bg-none  -bottom-6/6 absolute text-center -z-50">
       <div className="">
         <span className="uppercase  text-green-500 font-semibold font-sans  sm:text-xl">
           Our Properties
@@ -20,7 +20,7 @@ const Featured = () => {
         {isLoading ? (
           <p>loading .....</p>
         ) : (
-          <div className="flex sm:w-5/6 lg:w-4/6 mx-auto gap-6 items-center justify-evenly ">
+          <div className="flex sm:flex-row flex-col sm:w-5/6 lg:w-4/6 mx-auto sm:gap-6 items-center justify-evenly  overflow-x-scroll">
             {house.slice(0, 4).map((house) => (
               <HouseCard
                 name={house.name}

@@ -34,22 +34,26 @@ const HouseCard = ({
   const remainingDays = time % 7;
 
   return (
-    <div className=" shadow-lg w-[550px] my-5 group hover:shadow-black/30">
+    <div className=" shadow-lg bg-gray-200 hover:bg-white transition-all ease-in-out duration-300  w-[250px] my-5 group hover:shadow-white/10 lg:hover:shadow-black/30 text-sm">
       <div className=" h-[250px] relative">
-        <img src={image} alt={name} className="w-full h-full object-cover" />
+        <div className="h-[250px] w-[250px]">
+          <img src={image} alt={name} className="w-full h-full object-cover" />
+        </div>
 
         <div className="absolute bottom-0 top-0  left-0 w-full bg-black/10 group-hover:hidden z-10"></div>
-        <span className="absolute bottom-7 left-6 bg-green-500 px-3 text-white py-0.5 shadow ">
-          {price}{" "}
-        </span>
-        {old_price && (
-          <span className="absolute bottom-7 right-20 line-through bg-green-700 px-3 text-white py-0.5 shadow ">
-            {old_price}
+        <div className="flex items-start  gap-3 px-2 absolute bottom-7 left-1">
+          <span className=" w-fit bg-green-500  px-1 text-white py-0.5 shadow ">
+            {price}{" "}
           </span>
-        )}
+          {old_price && (
+            <span className="   line-through bg-green-700  px-1 w-fit text-white py-0.5 shadow ">
+              {old_price}
+            </span>
+          )}
+        </div>
       </div>
       <div className="px-4 py-3">
-        <div className="flex items-center justify-between text-sm text-gray-400 capitalize">
+        <div className="flex items-center justify-between  text-gray-400 capitalize">
           <div className="flex items-center h-10 w-full gap-2 ">
             <img
               src={image}
@@ -78,21 +82,21 @@ const HouseCard = ({
             <span
               className={`${
                 type === "sale" ? "bg-green-500" : "bg-red-500"
-              } text-white text-sm capitalize py-0.5 px-2 shadow rounded`}
+              } text-white  capitalize py-0.5 px-2 shadow rounded`}
             >
               {type}
             </span>
           </div>
           <div className="mt-4 flex items-center  gap-3 text-gray-400">
-            <div className="flex gap-3 items-center justify-between">
+            <div className="flex gap-1.5 items-center justify-between">
               <LiaBedSolid />
               <p>{room} </p>
             </div>
-            <div className="flex gap-3 items-center justify-between">
+            <div className="flex gap-1.5 items-center justify-between">
               <PiBathtubLight />
               <p>{bath} </p>
             </div>
-            <div className="flex gap-3 items-center justify-between">
+            <div className="flex gap-1.5 items-center justify-between">
               <GiSpikedFence />
               <p>{size} sqft </p>
             </div>

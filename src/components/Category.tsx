@@ -7,7 +7,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 const Category = () => {
   const [category, setCategory] = useState("");
   return (
-    <div className="w-full sm:-bottom-2/6 -mb-[500px] -bottom-6/6 absolute text-center -z-50">
+    <div className="w-full sm:-bottom-2/6 sm:-mb-[500px] -mb-[1000px] -bottom-6/6 absolute text-center -z-50">
       <div className="">
         <span className="uppercase  text-green-500 font-semibold font-sans  sm:text-xl">
           Oakberry Categories

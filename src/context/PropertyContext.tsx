@@ -12,7 +12,7 @@ import {
 import { houseTypes } from "../types";
 import { houseDatas } from "../data";
 
-/* eslint-disable @typescript-eslint/no-empty-object-type */
+
 type UseProperttInfo = {
   house: houseTypes[];
   setHouse: (house: houseTypes[]) => void;
