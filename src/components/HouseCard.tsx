@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 
 import { GiSpikedFence } from "react-icons/gi";
 import { IoLocationSharp } from "react-icons/io5";
@@ -34,7 +34,7 @@ const HouseCard = ({
   const remainingDays = time % 7;
 
   return (
-    <div className=" shadow-lg bg-gray-200 hover:bg-white transition-all ease-in-out duration-300  w-[250px] my-5 group hover:shadow-white/10 lg:hover:shadow-black/30 text-sm">
+    <div className=" shadow-lg max-sm:bg-gray-200 hover:bg-white transition-all ease-in-out duration-300  w-[250px] my-5 group hover:shadow-white/10 lg:hover:shadow-black/30 text-sm">
       <div className=" h-[250px] relative">
         <div className="h-[250px] w-[250px]">
           <img src={image} alt={name} className="w-full h-full object-cover" />

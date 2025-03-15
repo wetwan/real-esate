@@ -6,7 +6,7 @@ import HouseCard from "./HouseCard";
 const Featured = () => {
   const { house, isLoading } = useContext(PropertyContext);
   return (
-    <div className="w-full sm:-bottom-2/6 sm:-mb-[1200px] py-10  -mb-[3100px] bg-blue-800 sm:bg-none  -bottom-6/6 absolute text-center -z-50">
+    <div className="w-full sm:-bottom-2/6 sm:-mb-[1200px] py-10  -mb-[3100px] max-sm:bg-blue-800  -bottom-6/6 absolute text-center -z-50">
       <div className="">
         <span className="uppercase  text-green-500 font-semibold font-sans  sm:text-xl">
           Our Properties

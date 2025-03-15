@@ -6,14 +6,3 @@ body {
     font-family: "Nunito Sans", "Poppins", "Outfit", sans-serif;
     scroll-behavior: smooth;
 }
-
-@layer utilities {
-    .scrollbar-hide {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-}

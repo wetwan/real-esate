@@ -5,6 +5,11 @@ import image4 from './img4.jpg'
 import image5 from './img5.jpg'
 import image1 from './img1.jpg'
 import image6 from './img6.jpg'
+import image7 from './img7.jpg'
+import image8 from './img8.jpg'
+import image9 from './img9.jpg'
+import image10 from './img10.jpg'
+
 
 export const assests={
     image,
@@ -14,4 +19,8 @@ export const assests={
     image4,
     image5,
     image6,
+    image7,
+    image8,
+    image9,
+    image10,
 }
