@@ -1,5 +1,6 @@
+
 import { assests } from "../assets";
-import { houseTypes } from "../types";
+import { agentType, houseTypes } from "../types";
 
 export const houseDatas: houseTypes[] = [
   {
@@ -124,3 +125,49 @@ export const fadeImages = [
     caption: "First Slide",
   },
 ];
+export const agentData: agentType[] = [
+  {
+    _id: "1",
+    Image: assests.agent1,
+    name: "Ethan Alexander",
+    listing: "10",
+  },
+  {
+    _id: "2",
+    Image: assests.agent2,
+    name: "Emily Victoria",
+    listing: "13",
+  },
+  {
+    _id: "3",
+    Image: assests.agent3,
+    name: "Ava Isabelle ",
+    listing: "102",
+  },
+  {
+    _id: "4",
+    Image: assests.agent4,
+    name: "Liam Benjamin",
+    listing: "12",
+  },
+  {
+    _id: "5",
+    Image: assests.agent5,
+    name: "Lucas Julian",
+    listing: "20",
+  },
+  {
+    _id: "6",
+    Image: assests.agent6,
+    name: " Gabriel Harrison",
+    listing: "05",
+  },
+  {
+    _id: "7",
+    Image: assests.agent7,
+    name: " Sanders Mason",
+    listing: "15",
+  },
+];
+
+

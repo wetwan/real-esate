@@ -5,10 +5,18 @@ export type houseTypes = {
     type: string,
     bathroom: string,
     bed: string,
-    poasted: number ,
+    poasted: number,
     location: string,
     size: string,
     price: string,
     old_price?: string,
     renter: string
+}
+
+export type agentType = {
+    _id: string,
+    Image: string,
+    name: string,
+    listing: string,
+
 }

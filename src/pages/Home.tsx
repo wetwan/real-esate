@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Agents from "../components/Agents";
 import Category from "../components/Category";
 import Featured from "../components/Featured";
 import Hero from "../components/Hero";
@@ -14,6 +15,7 @@ const Home = () => {
       <Featured />
       <About />
       <Subscribtion />
+      <Agents />
     </div>
   );
 };

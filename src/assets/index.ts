@@ -9,6 +9,15 @@ import image7 from './img7.jpg'
 import image8 from './img8.jpg'
 import image9 from './img9.jpg'
 import image10 from './img10.jpg'
+import agent1 from './agent1.jpg'
+import agent2 from './agent2.jpg'
+import agent3 from './agent3.jpg'
+import agent4 from './agent4.jpg'
+import agent5 from './agent5.jpg'
+import agent6 from './agent6.jpg'
+import agent7 from './agent7.jpg'
+
+
 
 
 export const assests={
@@ -23,4 +32,11 @@ export const assests={
     image8,
     image9,
     image10,
+    agent1,
+    agent2,
+    agent3,
+    agent4,
+    agent5,
+    agent6,
+    agent7
 }

@@ -9,24 +9,29 @@ import {
   useEffect,
   useState,
 } from "react";
-import { houseTypes } from "../types";
-import { houseDatas } from "../data";
-
+import { agentType, houseTypes } from "../types";
+import { agentData, houseDatas } from "../data";
 
 type UseProperttInfo = {
   house: houseTypes[];
   setHouse: (house: houseTypes[]) => void;
+  agent: agentType[];
+  setAgent: (agent: agentType[]) => void;
   isLoading: boolean;
   setIsLoading: (isLoading: boolean) => void;
   fetchHouse: () => void;
+  fetchAgent: () => void;
 };
 
 const initContext: UseProperttInfo = {
   house: [],
   setHouse: () => {},
+  agent: [],
+  setAgent: () => {},
   isLoading: true,
   setIsLoading: () => {},
   fetchHouse: () => {},
+  fetchAgent: () => {},
 };
 
 export const PropertyContext = createContext<UseProperttInfo>(initContext);
@@ -37,17 +42,21 @@ const PropertyContextProvider = ({
   children?: ReactNode;
 }): ReactElement => {
   const [house, setHouse] = useState<houseTypes[]>([]);
+  const [agent, setAgent] = useState<agentType[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const fetchHouse = async () => {
     setHouse(houseDatas);
-    console.log(houseDatas);
+  };
+  const fetchAgent = async () => {
+    setAgent(agentData);
   };
 
   useEffect(() => {
     // setIsLoading(true);
     fetchHouse();
-       setIsLoading(false);
+    fetchAgent();
+    setIsLoading(false);
   }, []);
 
   const value: UseProperttInfo = {
@@ -56,6 +65,9 @@ const PropertyContextProvider = ({
     isLoading,
     setIsLoading,
     fetchHouse,
+    agent,
+    setAgent,
+    fetchAgent,
   };
 
   return (
