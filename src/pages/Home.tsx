@@ -1,4 +1,5 @@
 import Category from "../components/Category";
+import Featured from "../components/Featured";
 import Hero from "../components/Hero";
 import Search from "../components/Search";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Search />
       <Category />
+      <Featured/>
     </div>
   );
 };

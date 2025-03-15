@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useState } from "react";
 
 import { GiFactory, GiFamilyHouse, GiIsland } from "react-icons/gi";
@@ -18,7 +18,7 @@ const Category = () => {
         </h1>
       </div>
       <div
-        className="sm:flex w-full my-14 items-center justify-between gap-2 sm:w-5/6 mx-auto lg:w-4/6 shadow-md
+        className="sm:flex w-full my-14 items-center justify-between gap-2 sm:w-5/6 mx-auto lg:w-4/6
       "
       >
         <div
@@ -26,7 +26,7 @@ const Category = () => {
             category === "Land"
               ? "bg-green-500 text-white"
               : " bg-gray-200 text-black"
-          }  py-6 mb-1 flex justify-center items-center flex-col w-full sm:w-1/4  gap-4 `}
+          }  py-6 mb-1 flex md:py-10 justify-center items-center flex-col w-full sm:w-1/4  gap-4 shadow rounded `}
           onClick={() => setCategory("Land")}
         >
           <GiIsland className="text-5xl " />
@@ -37,7 +37,7 @@ const Category = () => {
             category === "Residential"
               ? "bg-green-500 text-white"
               : " bg-gray-200 text-black"
-          }  py-6 mb-1 flex justify-center items-center flex-col w-full sm:w-1/4  gap-4 `}
+          }  py-6 mb-1 flex md:py-10 justify-center items-center flex-col w-full sm:w-1/4  gap-4 shadow rounded `}
           onClick={() => setCategory("Residential")}
         >
           <GiFamilyHouse className="text-5xl " />
@@ -48,7 +48,7 @@ const Category = () => {
             category === "Commercial"
               ? "bg-green-500 text-white"
               : " bg-gray-200 text-black"
-          }  py-6 mb-1 flex justify-center items-center flex-col w-full sm:w-1/4  gap-4 `}
+          }  py-6 mb-1 flex md:py-10 justify-center items-center flex-col w-full sm:w-1/4  gap-4 shadow rounded `}
           onClick={() => setCategory("Commercial")}
         >
           <HiOutlineBuildingOffice2 className="text-5xl " />
@@ -59,7 +59,7 @@ const Category = () => {
             category === "Industrial"
               ? "bg-green-500 text-white"
               : " bg-gray-200 text-black"
-          }  py-6 mb-1 flex justify-center items-center flex-col w-full sm:w-1/4  gap-4 `}
+          }  py-6 mb-1 flex md:py-10 justify-center items-center flex-col w-full sm:w-1/4  gap-4 shadow rounded `}
           onClick={() => setCategory("Industrial")}
         >
           <GiFactory className="text-5xl " />
