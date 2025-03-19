@@ -101,7 +101,7 @@ export const navItem = [
   },
   {
     link: "/agents",
-    label: "agents",
+    label: "agents", 
   },
   {
     link: "/contact",

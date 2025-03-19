@@ -13,7 +13,7 @@ const Home = () => {
       <Search />
       <Category />
       <Featured />
-      <About />
+      <About className="w-full sm:-bottom-2/6 sm:-mb-[2000px] h-screen -mb-[3800px] -bottom-6/6 absolute text-center -z-50" />
       <Subscribtion />
       <Agents />
     </div>

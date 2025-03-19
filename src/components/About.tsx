@@ -1,8 +1,11 @@
 import { assests } from "../assets";
 
-const About = () => {
+type props = {
+  className: string;
+};
+const About = ({ className }: props) => {
   return (
-    <div className="w-full sm:-bottom-2/6 sm:-mb-[2200px] h-screen -mb-[3800px] -bottom-6/6 absolute text-center -z-50">
+    <div className={className}>
       <div className="w-5/6 gap-4  my-12 lg:w-4/6 mx-auto h-[90%] flex items-start justify-between">
         <div
           className="w-2/6 max-sm:hidden  h-full mx-1 bg-contain  bg-center bg-no-repeat"

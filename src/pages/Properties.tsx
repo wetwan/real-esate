@@ -1,8 +1,17 @@
 import React from 'react'
+import Pagebanner from '../components/Pagebanner'
+import { assests } from '../assets'
 
 const Properties = () => {
   return (
-    <div>Properties</div>
+    <div>
+            <Pagebanner
+        title="our properties"
+        image={assests.image9}
+
+        text="properties"
+      />
+    </div>
   )
 }
 

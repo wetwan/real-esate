@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Pagebanner from "../components/Pagebanner";
+import { assests } from "../assets";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <Pagebanner title="contact us" image={assests.image10} text="contact" />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
