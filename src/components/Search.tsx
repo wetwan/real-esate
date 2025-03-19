@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { CiLocationArrow1 } from "react-icons/ci";
-
-const Search = () => {
+type Props= {
+  className: string
+}
+const Search = ({className}:Props) => {
   const [properties, setProperties] = useState("buy");
 
   return (
-    <div className=" lg:w-4/6 sm:w-5/6 flex flex-col items-center justify-center -z-50 px-2 mx-auto  sm:mb-20 pb-10 -mb-20 absolute lg:-bottom-36 -bottom-72 sm:-bottom-40 lg:p-6 left-1/2 -translate-x-1/2">
+    <div className={className}>
       <div className="sm:w-3/6   mx-auto flex items-center justify-between md:gap-4 gap-2  mb-0 text-white">
         <button
           className={` ${

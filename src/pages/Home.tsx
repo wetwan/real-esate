@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="-z-50">
       <Hero />
-      <Search />
+      <Search className=" lg:w-4/6 sm:w-5/6 flex flex-col items-center justify-center -z-50 px-2 mx-auto  sm:mb-20 pb-10 -mb-20 absolute lg:-bottom-36 -bottom-72 sm:-bottom-40 lg:p-6 left-1/2 -translate-x-1/2" />
       <Category />
       <Featured />
       <About className="w-full sm:-bottom-2/6 sm:-mb-[2000px] h-screen -mb-[3800px] -bottom-6/6 absolute text-center -z-50" />
