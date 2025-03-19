@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   const navigate = useNavigate();
   return (
-    <header className="w-full bg-black/10 max-lg:fixed -top-0 z-[5678987654]">
+    <header className="w-th bg-black/10 max-lg:fixed -top-0 z-[5678987654]">
       <nav className="lg:w-4/6 w-full items-center justify-between lg:mx-auto  max-lg:px-2  flex">
         <div
           className="text-white font-bold cursor-pointer h-full"

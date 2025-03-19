@@ -11,9 +11,11 @@ type Props = {
 const Pagebanner = ({image ,text,title}:Props) => {
   return (
     <div
-      className="w-full h-[60vh] bg-center flex items-center justify-center  bg-no-repeat mx-auto absolute top-0 -z-50  pt-[10vh]"
+      className="w-full h-[60vh] bg-cover flex items-center justify-center  bg-no-repeat mx-auto absolute top-0 -z-50  pt-[10vh]"
       style={{
         backgroundImage: `url(${image})`,
+        // backgroundSize: `10% 100%`,
+        backgroundPosition: 'center'
       }}
     >
       <div className=" py-2 lg:w-4/6 mx-auto sm:w-5/6 text-center">

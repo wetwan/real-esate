@@ -16,6 +16,7 @@ import agent4 from './agent4.jpg'
 import agent5 from './agent5.jpg'
 import agent6 from './agent6.jpg'
 import agent7 from './agent7.jpg'
+import vid from './vid.mp4'
 
 
 
@@ -38,5 +39,6 @@ export const assests={
     agent4,
     agent5,
     agent6,
-    agent7
+    agent7,
+    vid
 }

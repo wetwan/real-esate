@@ -1,4 +1,3 @@
-
 import { assests } from "../assets";
 import { agentType, houseTypes } from "../types";
 
@@ -101,7 +100,7 @@ export const navItem = [
   },
   {
     link: "/agents",
-    label: "agents", 
+    label: "agents",
   },
   {
     link: "/contact",
@@ -170,4 +169,16 @@ export const agentData: agentType[] = [
   },
 ];
 
-
+export const images = [
+  assests.image,
+  assests.image2,
+  assests.image3,
+  assests.image4,
+  assests.image5,
+  assests.image1,
+  assests.image6,
+  assests.image7,
+  assests.image8,
+  assests.image9,
+  assests.image10,
+];
