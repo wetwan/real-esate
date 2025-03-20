@@ -8,7 +8,7 @@ type Props = {
 const AgentCard = ({ name, image, listing }: Props) => {
   const socials = [FaFacebookF, FaXTwitter, FaGoogle];
   return (
-    <div className="shadow  sm:w-1/4  w-5/6 ">
+    <div className="shadow  ">
       <div className="sm:h-52 h-80  group overflow-hidden">
         <img src={image} alt={name} className="w-full object-contain group-hover:scale-110 transition-all duration-500 ease-in" />
       </div>

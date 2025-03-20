@@ -20,7 +20,7 @@ const Pagebanner = ({image ,text,title}:Props) => {
     >
       <div className=" py-2 lg:w-4/6 mx-auto sm:w-5/6 text-center">
         <div className="flex items-center justify-center text-white uppercase font-semibold  font-sans text-xl">
-          <Link to={`/`}> home</Link>
+          <Link to={`/`} onClick={()=> scrollTo(0,0)}> home</Link>
           <BiChevronRight className="text-4xl " />
           <span> {text}</span>
         </div>
