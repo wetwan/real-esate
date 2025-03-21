@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from "react";
 import { IconType } from "react-icons";
-import { BiChevronRight } from "react-icons/bi";
 
 type Props = {
   text?: string;

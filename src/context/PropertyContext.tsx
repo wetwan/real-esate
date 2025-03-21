@@ -1,6 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 /* eslint-disable react-refresh/only-export-components */
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 
 import {
   createContext,

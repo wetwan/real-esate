@@ -1,4 +1,4 @@
-// import { assests } from "../assets";
+
 import About from "../components/About";
 
 import { assests } from "../assets";

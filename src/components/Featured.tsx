@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useContext } from "react";
 import { PropertyContext } from "../context/PropertyContext";
 import HouseCard from "./HouseCard";
